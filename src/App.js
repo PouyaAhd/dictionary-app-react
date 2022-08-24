@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dictionary from "./components/Dictionary";
 
 function App() {
+  // useEffect(() => {
+  //   axios
+  //     .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
+  //     .then((res) => {
+  //       console.log(res);
+  //       setWords(res.data[0].meanings);
+  //     });
+  // }, []);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="App-title">Dictionary</h1>
       </header>
+      <Dictionary/>
     </div>
   );
 }
